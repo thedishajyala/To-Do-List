@@ -3,6 +3,7 @@ A dynamic and user-friendly to-do list web application that allows users to add,
 
 The app is responsive and includes features like checkboxes for marking tasks as complete, auto-updating dates and times, and real-time task management.
 
+
 Features:
 
 ▣ Add and remove tasks: Easy-to-use controls for adding new tasks and deleting completed tasks.
@@ -14,6 +15,7 @@ Features:
 ▣ Responsive design: Works across different screen sizes.
 
 ▣ Notebook-style aesthetic: Clean and minimal interface with styled task dividers.
+
 
 
 How to Use: Simply click on the “+ add” button to create a new task. Enter your task, and press Enter to save. Click the checkbox to mark as complete and the “✗” button to remove it.
