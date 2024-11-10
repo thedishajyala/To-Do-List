@@ -1,4 +1,4 @@
-# To-Do-list-
+# To-Do-list
 A dynamic and user-friendly to-do list web application that allows users to add, manage, and remove tasks in an organized way, with an intuitive design and layout.
 
 The app is responsive and includes features like checkboxes for marking tasks as complete, auto-updating dates and times, and real-time task management.
