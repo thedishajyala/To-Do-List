@@ -1,0 +1,265 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the app on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main App Container */
+.app-container {
+    width: 750px;
+    height: 564px;
+    border: 3px solid #000000;
+    background-color: #F5F5DC;
+    box-shadow: 5px 5px 0 #333333;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Header Section */
+.app-header {
+    width: 100%;
+    height: 54px;
+    background-color: #973d3d;
+    border-bottom: 3px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Title Styling */
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Date and Time Styling */
+.date,
+.time {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* To-Do List section */
+.todo-section {
+    width: calc(100%-10px);
+    max-height: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+    margin: 10px 0;
+    padding-right: 10px;
+    padding: 0 20px;
+    margin-right: 10px;
+}
+
+/* Styling the individual tasks */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+/* Custom Checkbox Styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #000;
+    background-color: #fff;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+.checkbox-container input[type="checkbox"]:checked+.custom-checkbox {
+    background-color: #FFFFFF;
+    border-color: #D9D9D9;
+}
+
+.checkbox-container input[type="checkbox"]:checked+.custom-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 5px;
+    border: solid #D9D9D9;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Task Input Styling */
+.task-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.task-input.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Add Task section */
+.add-task {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.add-task button {
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #D9D9D9;
+    border: 3px solid #000000;
+    cursor: pointer;
+}
+
+.todo-section::-webkit-scrollbar {
+    width: 9px;
+}
+
+.todo-section::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 3px solid #000000;
+}
+
+.date,
+.title,
+.time {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+    color: #FFFFFF;
+    /* Set text color to white */
+}
+
+.task-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0;
+    flex-grow: 1;
+    /* Remove extra padding to fill the line */
+    background: transparent;
+    width: 100%;
+    /* Use full width of container */
+    box-sizing: border-box;
+    white-space: normal;
+    /* Allow text to wrap */
+    overflow-wrap: break-word;
+    /* Wrap text to the next line if too long */
+}
+
+/* Task Item Styling - to ensure full width usage */
+.task-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* Make task item take full width of container */
+}
+
+/* Checkbox container adjustments */
+.checkbox-container {
+    flex-shrink: 0;
+    /* Prevent checkbox container from shrinking */
+    margin-right: 10px;
+    /* Add spacing between checkbox and task text */
+    width: 100%;
+}
+
+/* Styling for each task item */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #8B4513;
+    /* Add brown line between tasks */
+    padding: 8px 0;
+    box-sizing: border-box;
+    position: relative;
+    /* Adjust padding for spacing */
+}
+
+/* Remove border from the last task item */
+.task-item:last-child {
+    border-bottom: none;
+    /* No line after the last task */
+}
+
+
+/* Styling for the Remove button */
+.remove-button {
+    margin-left: 10%;
+    /* Space between the task and the button */
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #8B4513;
+    /* Brown color for notebook-like style */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    right: 0px;
+}
+
+.remove-button:hover {
+    background-color: #5a2d1a;
+    /* Darker shade for hover effect */
+}
