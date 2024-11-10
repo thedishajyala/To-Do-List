@@ -5,15 +5,16 @@ The app is responsive and includes features like checkboxes for marking tasks as
 
 Features:
 
-◼Add and remove tasks: Easy-to-use controls for adding new tasks and deleting completed tasks.
+▣ Add and remove tasks: Easy-to-use controls for adding new tasks and deleting completed tasks.
 
-◼Completion markers: Toggle each task as completed or uncompleted.
+▣ Completion markers: Toggle each task as completed or uncompleted.
 
-◼Real-time date and time display: Current date and time display at the header, auto-updated every minute.
+▣ Real-time date and time display: Current date and time display at the header, auto-updated every minute.
 
-◼Responsive design: Works across different screen sizes.
+▣ Responsive design: Works across different screen sizes.
 
-◼Notebook-style aesthetic: Clean and minimal interface with styled task dividers.
+▣ Notebook-style aesthetic: Clean and minimal interface with styled task dividers.
+
 
 How to Use: Simply click on the “+ add” button to create a new task. Enter your task, and press Enter to save. Click the checkbox to mark as complete and the “✗” button to remove it.
 
