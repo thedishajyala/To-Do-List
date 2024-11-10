@@ -15,3 +15,4 @@ How to Use: Simply click on the “+ add” button to create a new task. Enter y
 
 Feel free to fork, contribute, or use this code as a starting point for your own projects!
 
+<img width="1227" alt="Screenshot 2024-11-10 at 2 33 02 PM" src="https://github.com/user-attachments/assets/6d0875f4-35db-482d-b91b-105ba5f3eeea">
